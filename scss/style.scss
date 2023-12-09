@@ -1,0 +1,48 @@
+@import "./config/vars";
+@import "./config/mixins";
+@import "./config/default";
+
+body {
+    font: 16px/1.2 "JetBrainsMono NFM", monospace;
+    background-image: url(../img/background.jpg);
+    background-color: rgba(20, 20, 20, 1);
+    background-attachment: fixed;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+
+    &-logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &-list {
+        display: inherit;
+        list-style-type: none;
+        gap: 32px;
+    }
+
+    &-item {
+        &__link {
+            transition: 0.1s;
+            padding: 4px 14px;
+            background: #323232;
+            border-radius: 5px;
+            box-shadow: 2px 2px 1px 1px #212121;
+
+            &:hover {
+                margin-right: 2px;
+                margin-bottom: 100px;
+                padding-left: 18px;
+                padding-top: 4px;
+                box-shadow: 4px 2px 1px 1px #212121;
+            }
+        }
+    }
+}
