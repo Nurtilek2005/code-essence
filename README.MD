@@ -1,2 +1,0 @@
-# CodeEssence web site (test)
-
